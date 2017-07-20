@@ -1,0 +1,3 @@
+Error in library(dygraphs) : there is no package called ‘dygraphs’
+Calls: runApp ... sourceUTF8 -> eval -> eval -> ..stacktraceon.. -> library
+Execution halted

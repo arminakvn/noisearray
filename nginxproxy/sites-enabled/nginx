@@ -1,0 +1,40 @@
+server {
+
+    listen 80;
+    server_name localhost;
+    charset utf-8;
+    
+    location /public {
+        alias /usr/src/app/public;
+        
+        add_header Cache-control "public";
+        access_log   off;
+        expires      90d;
+    }
+    
+    
+    
+    
+    location /scripts {
+        alias /usr/src/app/scripts;
+    }
+    location /styles {
+        alias /usr/src/app/styles;
+    }
+    location /streetlevel {
+        rewrite ^/streetlevel(.*)$ $1/ break;
+        proxy_pass http://flags:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    }
+
+    location / {
+        proxy_pass http://shiny:3838;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+}

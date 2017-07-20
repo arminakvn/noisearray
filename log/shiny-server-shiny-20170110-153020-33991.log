@@ -1,0 +1,42 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Loading required package: sp
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+
+Listening on http://127.0.0.1:33991
+Warning: Error in if: argument is of length zero
+Stack trace (innermost first):
+    82: dygraph
+    81: eval
+    80: eval
+    79: %>%
+    78: func [/srv/shiny-server/server.R#91]
+    77: origRenderFunc
+    76: output$dygraph2
+     1: runApp
+`geom_smooth()` using method = 'gam'
+`geom_smooth()` using method = 'gam'
+`geom_smooth()` using method = 'gam'
+Warning: Error in if: argument is of length zero
+Stack trace (innermost first):
+    82: dygraph
+    81: eval
+    80: eval
+    79: %>%
+    78: func [/srv/shiny-server/server.R#91]
+    77: origRenderFunc
+    76: output$dygraph2
+     1: runApp
+

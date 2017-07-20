@@ -1,0 +1,8 @@
+datasets="/usr/local/lib/R/library/datasets"
+grDevices="/usr/local/lib/R/library/grDevices"
+graphics="/usr/local/lib/R/library/graphics"
+leaflet="/usr/local/lib/R/site-library/leaflet"
+lubridate="/usr/local/lib/R/site-library/lubridate"
+methods="/usr/local/lib/R/library/methods"
+stats="/usr/local/lib/R/library/stats"
+utils="/usr/local/lib/R/library/utils"

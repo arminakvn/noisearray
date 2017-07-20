@@ -1,0 +1,60 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>philips-data</title>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/d3.min.js"></script>
+  <script src="scripts/dat.gui.min.js"></script>
+  <script src="scripts/Detector.js"></script>
+  <script src="scripts/three.min.js"></script>
+  <script src="scripts/transformcontrols.js"></script>
+  <script src="scripts/semantic.min.js"></script>
+  <script src="https://dl.dropboxusercontent.com/u/3587259/Code/Threejs/OrbitControls.js"></script>
+<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/semantic.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/style.css"> 
+  </head>
+
+<body style="background-color:#060606;">
+    <div class="row" id="glcanvasrow">
+    <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12" id="WebGLCanvas"></div>
+    </div>
+    
+<div class="row" style="height:20px"></div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-6 offset-md-1 offset-lg-2">
+      <h4 class="header" style="color: #ffffff; padding-left: 10px">Timeline</h4>
+        <div id="range-speed" style="padding-left: 20px"></div>
+      </div>
+
+    <div class="col-md-5 col-lg-5 offset-md-1 offset-lg-0" id="uicontrols">
+
+      <h3 class="header" style="color: #ffffff"> Measured loudness levels across time</h3>
+      <h4 class="header" style="color: #ffffff">Sound components</h4>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="components" style="display: inherit !important;margin-left: 0px !important;" checked="" tabindex="0" id="frequency">
+          <label style="color: #ffffff;font-size: initial;" class="checkbox">loudness</label>
+        </div>
+      </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="components" style="display: inherit !important;margin-left: 0px !important;" tabindex="0" id="loudness">
+        <label style="color: #ffffff;font-size: initial;">frequency</label>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<script src="scripts/helpers.js"></script>
+<script src="scripts/configs.js"></script>
+<script src="scripts/parsers.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/ui.js"></script>
+</body>
+</html>

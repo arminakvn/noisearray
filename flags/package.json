@@ -1,0 +1,25 @@
+{
+  "name": "webpaper",
+  "version": "1.0.0",
+  "description": "philips data paperjs animation app",
+  "main": "cluster.js",
+  "scripts": {
+    "start": "node cluster.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy app.yaml"
+  },
+  "author": "arminakvn",
+  "license": "ISC",
+  "dependencies": {
+    "async": "latest",
+    "cluster": "latest",
+    "serve-static": "latest",
+    "body-parser": "latest",
+    "daemon": "latest",
+    "express": "latest",
+    "optimist": "latest",
+    "request": "latest",
+    "three-orbit-controls": "latest",
+    "three-transformcontrols": "latest"
+  }
+}

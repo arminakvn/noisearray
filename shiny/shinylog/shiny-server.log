@@ -1,0 +1,193 @@
+[32m[2016-12-15 20:00:32.437] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:00:32.541] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:00:32.596] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:00:32.604] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:01:07.122] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 20:01:07.173] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 20:02:16.023] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:26:14.905] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:27:44.233] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:27:44.266] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:28:30.730] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:28:30.768] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:28:30.842] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:28:30.850] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[31m[2016-12-15 20:28:51.545] [ERROR] shiny-server - [39mFailed to render error 500 page: Can't set headers after they are sent.
+[32m[2016-12-15 20:31:35.504] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:31:35.516] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:31:42.821] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:31:42.832] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:31:43.014] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:31:43.027] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:32:37.148] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 20:32:37.243] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 20:32:42.881] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:33:07.863] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:33:12.727] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:33:19.377] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:33:26.308] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:33:26.309] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:33:33.972] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:33:33.979] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:33:34.048] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:33:34.057] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:34:02.237] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:34:23.680] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:36:00.187] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:36:03.622] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:48:35.815] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:48:35.818] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:48:42.028] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:48:42.037] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:48:42.099] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:48:42.107] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:49:55.780] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 20:49:55.854] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 20:50:03.435] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:50:57.735] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:51:05.084] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:51:22.076] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:51:28.095] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:51:36.663] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:51:36.666] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:51:43.835] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:51:43.843] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:51:43.911] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:51:43.918] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:51:52.960] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:52:04.222] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:52:40.766] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:52:40.768] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:52:47.568] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:52:47.573] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:52:47.643] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:52:47.651] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:52:51.257] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:52:51.260] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:52:55.651] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:52:55.657] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:52:55.718] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:52:55.725] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:53:07.272] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:53:12.851] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:53:18.516] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:53:58.910] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:53:58.914] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:54:03.635] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:54:03.641] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:54:03.709] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:54:03.717] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:57:31.003] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:57:54.174] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 20:58:15.808] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 20:58:15.810] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 20:58:21.164] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:58:21.171] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:58:21.241] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:58:21.248] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 20:59:54.920] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 20:59:54.926] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 20:59:54.985] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 20:59:54.993] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[31m[2016-12-15 20:59:55.005] [ERROR] shiny-server - [39mHTTP server error (0.0.0.0:3838): listen EADDRINUSE 0.0.0.0:3838
+[32m[2016-12-15 20:59:55.006] [INFO] shiny-server - [39mShutting down worker processes
+[32m[2016-12-15 21:00:08.309] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:00:13.581] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 21:00:13.582] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 21:00:18.925] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 21:00:18.932] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 21:00:18.992] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 21:00:19.000] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 21:00:27.513] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:00:33.885] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 21:00:33.886] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 21:00:40.759] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 21:00:40.766] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 21:00:40.832] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 21:00:40.850] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 21:01:03.418] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 21:01:03.435] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 21:01:07.379] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:01:37.778] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:02:42.974] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:03:08.691] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:03:31.958] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:03:32.009] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 21:06:11.611] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 21:06:11.613] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 21:06:16.227] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 21:06:16.236] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 21:06:16.326] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 21:06:16.335] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 22:54:17.729] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 22:54:17.746] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 22:54:28.127] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 22:54:28.134] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 22:54:28.213] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 22:54:28.224] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 22:58:58.072] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 22:58:58.227] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 22:59:44.434] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 22:59:44.447] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 22:59:49.524] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 22:59:49.530] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 22:59:49.594] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 22:59:49.601] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 23:08:52.040] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:08:52.127] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 23:08:52.191] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 23:08:52.198] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[31m[2016-12-15 23:08:52.212] [ERROR] shiny-server - [39mHTTP server error (0.0.0.0:3838): listen EADDRINUSE 0.0.0.0:3838
+[32m[2016-12-15 23:08:52.213] [INFO] shiny-server - [39mShutting down worker processes
+[32m[2016-12-15 23:11:35.325] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:11:35.333] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[31m[2016-12-15 23:11:35.390] [ERROR] shiny-server - [39mError loading config: The listen directive can't be used here (/etc/shiny-server/shiny-server.conf:4:3)
+[32m[2016-12-15 23:11:35.392] [INFO] shiny-server - [39mShutting down worker processes
+[32m[2016-12-15 23:14:32.970] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:14:32.999] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[31m[2016-12-15 23:14:33.057] [ERROR] shiny-server - [39mError loading config: The listen directive can't be used here (/etc/shiny-server/shiny-server.conf:4:3)
+[32m[2016-12-15 23:14:33.059] [INFO] shiny-server - [39mShutting down worker processes
+[32m[2016-12-15 23:15:25.573] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 23:15:25.578] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 23:15:33.490] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:15:33.497] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 23:15:33.570] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 23:15:33.578] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 23:15:42.875] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 23:15:42.899] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 23:15:47.074] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[31m[2016-12-15 23:18:33.893] [ERROR] shiny-server - [39mFailed to render error 500 page: Can't set headers after they are sent.
+[32m[2016-12-15 23:24:52.125] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:24:52.132] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 23:24:52.193] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 23:24:52.202] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[31m[2016-12-15 23:24:52.215] [ERROR] shiny-server - [39mHTTP server error (0.0.0.0:3838): listen EADDRINUSE 0.0.0.0:3838
+[32m[2016-12-15 23:24:52.216] [INFO] shiny-server - [39mShutting down worker processes
+[32m[2016-12-15 23:29:17.852] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 23:29:17.858] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 23:29:24.781] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:29:24.809] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 23:29:24.876] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 23:29:24.885] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 23:30:03.135] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 23:30:03.172] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 23:30:07.750] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 23:30:24.876] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 23:30:24.878] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-15 23:30:32.487] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-15 23:30:32.494] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-15 23:30:32.568] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-15 23:30:32.578] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-15 23:30:43.297] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-15 23:30:43.326] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-15 23:30:47.427] [INFO] shiny-server - [39mError getting worker: Error: The application exited during initialization.
+[32m[2016-12-15 23:34:13.174] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-15 23:34:13.205] [INFO] shiny-server - [39mShutting down worker processes (with notification)
+[32m[2016-12-16 00:05:41.537] [INFO] shiny-server - [39mShiny Server v1.5.1.834 (Node.js v6.9.1)
+[32m[2016-12-16 00:05:41.595] [INFO] shiny-server - [39mUsing config file "/etc/shiny-server/shiny-server.conf"
+[33m[2016-12-16 00:05:41.700] [WARN] shiny-server - [39mRunning as root unnecessarily is a security risk! You could be running more securely as non-root.
+[32m[2016-12-16 00:05:41.709] [INFO] shiny-server - [39mStarting listener on 0.0.0.0:3838
+[32m[2016-12-16 00:06:26.971] [INFO] shiny-server - [39mCreated bookmark state directory: /var/lib/shiny-server/bookmarks
+[32m[2016-12-16 00:06:27.059] [INFO] shiny-server - [39mCreated user bookmark state directory: /var/lib/shiny-server/bookmarks/shiny
+[32m[2016-12-16 00:28:36.612] [INFO] shiny-server - [39mStopping listener on 0.0.0.0:3838
+[32m[2016-12-16 00:28:36.682] [INFO] shiny-server - [39mShutting down worker processes (with notification)

@@ -1,0 +1,42 @@
+{
+    "data" : [
+        "\nR version 3.3.2 (2016-10-31) -- \"Sincere Pumpkin Patch\"\nCopyright (C) 2016 The R Foundation for Statistical Computing\nPlatform: x86_64-pc-linux-gnu (64-bit)\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n",
+        "> ",
+        "source('~/accident_data/data_exploration.R', echo=TRUE)",
+        "\n> library(lubridate)\n",
+        "\nAttaching package: ‘lubridate’\n\n",
+        "The following object is masked from ‘package:base’:\n\n    date\n\n",
+        "\n> library(leaflet)\n\n> fars <- read.csv(\"~/Documents/IDV/1 Fall 2016/ARTG 5330/lessons and files/final project/clean data/accident_data/fars.csv\")\n",
+        "Error in file(file, \"rt\") : cannot open the connection\n",
+        "In addition: ",
+        "Warning message:\n",
+        "In file(file, \"rt\") :",
+        "\n ",
+        " cannot open file '/home/as/Documents/IDV/1 Fall 2016/ARTG 5330/lessons and files/final project/clean data/accident_data/fars.csv': No such file or directory\n",
+        "> ",
+        "source('~/accident_data/data_exploration.R', echo=TRUE)",
+        "\n> library(lubridate)\n\n> library(leaflet)\n\n> fars <- read.csv(\"~/accident_data/fars.csv\")\n\n> fars$date <- with(fars, ymd_hm(sprintf('%04d%02d%02d%02d%02d', YEAR, MONTH, DAY, HOUR, MINUTE)))\n\n> head(fars)\n  ST_CASE COUNTY CITY DAY MONTH YEAR DAY_WEEK HOUR MINUTE LATITUDE  LONGITUD WEATHER FATALS\n1   10005     45 2050   7     1 2015        4    7      9 31.31933 -85.51510       1      1\n2   10007     89 1730   8     1 2015        5   18     33 34.77304 -86.52766       1      1\n3   10008     73  350   3     1 2015",
+        "        7   21     30 33.46249 -86.87091       2      1\n4   10009    117   47  13     1 2015        3    8      0 33.23610 -86.81392      10      1\n5   10012     95 1500   9     1 2015        6    6     35 34.36912 -86.28888       1      1\n6   10016     81 2340  13     1 2015        3   17     20 32.61824 -85.37138      10      1\n  DRUNK_DR                date\n1        0 2015-01-07 07:09:00\n2        0 2015-01-08 18:33:00\n3        0 2015-01-03 21:30:00\n4        0 2015-01-13 08:00:00\n5        0 2015-01-09 06:35:00",
+        "\n6        0 2015-01-13 17:20:00\n\n> # plot(fars$date, fars$FATALS)\n> \n> pal <- colorFactor(c(\"navy\", \"red\"), domain = c(1, 2))\n\n> m <- leaflet(fars) %>%\n+   # addProviderTiles(\"CartoDB.Positron\") %>%\n+   #Overlay groups\n+   addCircleMarkers(~LONGITUD,\n+              ~LATITUDE,\n .... [TRUNCATED] \n\n> # fitBounds(-167.276413, 5.499550, -52.233040, 83.162102) %>%\n> # clearBounds()\n> \n> m\n"
+    ],
+    "type" : [
+        2,
+        0,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        1,
+        2,
+        2,
+        2
+    ]
+}

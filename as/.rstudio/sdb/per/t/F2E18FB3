@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(lubridate)\nlibrary(leaflet)\n\n\nfars <- read.csv(\"~/accident_data/fars.csv\")\n\nfars$date <- with(fars, ymd_hm(sprintf('%04d%02d%02d%02d%02d', YEAR, MONTH, DAY, HOUR, MINUTE)))\nhead(fars)\n\n# plot(fars$date, fars$FATALS)\n\npal <- colorFactor(c(\"navy\", \"red\"), domain = c(1, 2))\n\nm <- leaflet(fars) %>%\n  # addProviderTiles(\"CartoDB.Positron\") %>%\n  #Overlay groups\n  addCircleMarkers(~LONGITUD,\n             ~LATITUDE,\n             radius = 2,\n             stroke = FALSE,\n             fillOpacity = 0.1,\n             # color = ~ pal(WEATHER)\n             color = \"red\"\n             ) %>%\n  \nsetView(-100, 35, zoom = 4)\n# fitBounds(-167.276413, 5.499550, -52.233040, 83.162102) %>%\n# clearBounds()\n\nm",
+    "created" : 1485529338645.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "836082346",
+    "id" : "F2E18FB3",
+    "lastKnownWriteTime" : 1485529385,
+    "last_content_update" : 1485529385271,
+    "path" : "~/accident_data/data_exploration.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

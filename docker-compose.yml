@@ -1,0 +1,55 @@
+version: '2'
+services:
+  rstudio:
+    image: arminakvn/rstudioph
+    ports:
+      - "8787"
+    volumes:
+      - /home/armin_akhavan/shinypackagephilipsmaster/:/home/
+      - ./app/:/srv/shiny-server/
+      - ./flags/:/usr/src/app/
+      - ./nginxproxy/sites-enabled/:/etc/nginx/sites-enabled/
+            # - /home
+        #- /home/shiny/shinypackages-philips-master/app/:/srv/shiny-server/
+        # - /home/shiny/shinypackages-philips-master/flags/:/usr/src/app/
+        #  - /home/shiny/shinypackages-philips-master/nginxproxy/sites-enabled/:/etc/nginx/sites-enabled/
+  nginxproxy:
+    build: ./nginxproxy/.
+    ports:
+      - "80:80"
+    volumes:
+      - /www/static
+      - /www/media
+        # - ./nginxproxy/sites-enabled/:/etc/nginx/sites-enabled/
+        # - ./flags/scripts/:/usr/src/app/scripts/
+        # - ./flags/styles/:/usr/src/app/styles/
+        #  - ./flags/public/:/usr/src/app/public/    
+    volumes_from:
+      - rstudio
+    links:
+      - rstudio:rstudio
+      - shiny:shiny
+      - flags:flags
+  shiny:
+    image: arminakvn/sensors
+    ports:
+      - 3838:3838
+    restart: always
+    depends_on: 
+      - rstudio
+    volumes_from:
+      - rstudio
+        # - ./app/:/srv/shiny-server/
+    environment:
+      - ROOT=true
+    links:
+      - rstudio:rstudio
+  flags:
+    build: ./flags/.
+    ports:
+      - 8080
+    volumes_from:
+      - rstudio
+        #  volumes:
+            # - ./flags/:/usr/src/app/
+

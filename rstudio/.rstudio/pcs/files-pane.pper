@@ -1,0 +1,9 @@
+{
+    "path" : "~/rs/js/accident_data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

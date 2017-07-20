@@ -1,0 +1,13 @@
+FROM python:2.7
+
+MAINTAINER Armin Akhavan <aarmin@mit.edu>
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        libatlas-base-dev gfortran
+
+RUN mkdir -p /opt/pandas/build/
+
+COPY requirements.txt /opt/pandas/build/requirements.txt
+
+RUN pip install -r /opt/pandas/build/requirements.txt

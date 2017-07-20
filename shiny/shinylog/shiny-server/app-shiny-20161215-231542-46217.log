@@ -1,0 +1,21 @@
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Loading required package: sp
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Warning in file(file, "rt") :
+  cannot open file '/srv/shiny-server/shinyapps/app/devicenames.csv': No such file or directory
+Error in file(file, "rt") : cannot open the connection
+Calls: runApp ... eval -> ..stacktraceon.. -> read.csv -> read.table -> file
+Execution halted

@@ -1,0 +1,125 @@
+1481832715239:install.packages("shiny")
+1481832951475:library(shiny)
+1481832957530:runApp("/home/app")
+1481832981743:install.packages("dygraphs")
+1481833041076:runApp("/home/app")
+1481833052753:installed.packages("leaflet")
+1481833067825:installed.packages("leaflet")
+1481833069613:runApp("/home/app")
+1481835270154:library(shiny)
+1481835279037:runApp('/home/app')
+1481835292068:install.packages("leaflet")
+1481835484441:runApp('/home/app')
+1481846944239:library(shiny)
+1481846950987:install.packages("shiny")
+1481847109061:library(shiny)
+1481847126499:runApp("/home/appph/")
+1481847155101:install.packages(c("RColorBrewer","leaflet", "dygraphs","shiny", "ggplot2","ggthemes","gstat","lubridate","ggmap","shinythemes","zoo","xts"))
+1481847166871:install.packages(c("RColorBrewer", "leaflet", "dygraphs", "shiny", "ggplot2", "ggthemes", "gstat", "lubridate", "ggmap", "shinythemes", "zoo", "xts"))
+1482002607067:library(shiny)
+1482445817969:devtools::install_github("Appsilon/shiny.router")
+1482446087956:height <- 600
+1482446088178:navbarPage("LA Pilot", theme = shinytheme("cyborg"), id="atab",
+1482446088179:tabPanel("About",
+1482446088180:includeCSS("www/css/style.css"),
+1482446088181:includeHTML("www/insert.html")
+1482446088181:),
+1482446088183:tabPanel("Contour Map",
+1482446088184:verticalLayout(
+1482446088185:column(10,offset=1,
+1482446088186:leafletOutput("leaflet",  height = height)
+1482446088187:),
+1482446088188:column(10,offset=1,
+1482446088189:h1(),h1(),
+1482446088190:column(6,
+1482446088191:sliderInput("Time", "Time of day", min, max, value = min+3600, width='100%', timezone = "-0700"),
+1482446088191:radioButtons("component", label = "Sound components", choices = comps, selected = comps[5],inline = T)
+1482446088193:),
+1482446088194:column(6,
+1482446088194:h4("Noise readings and interpolated noise contour lines"),
+1482446088195:helpText("Numbers represent measured sound pressure values in db."),
+1482446088196:helpText("Contour lines indicate areas of equal noise levels based on a spatial interpolation of the measured values."),
+1482446088197:helpText("Lighter colors indicate more noise.")
+1482446088198:)
+1482446088198:)
+1482446088199:)
+1482446088200:),
+1482446088201:tabPanel("Time View",
+1482446088201:tags$head(
+1482446088202:tags$style(HTML(".dygraph-legend {background: transparent !important;}"))
+1482446088204:),
+1482446088205:verticalLayout(
+1482446088206:column(10,offset=1,
+1482446088208:dygraphOutput("dygraph1",height = height/2)
+1482446088210:),
+1482446088211:column(10,offset=1,
+1482446088212:dygraphOutput("dygraph2",height = height/2)
+1482446088213:),
+1482446088214:column(10,offset=1,
+1482446088216:h1(),h1(),
+1482446088217:column(5, offset=1,
+1482446088218:selectizeInput("devid", label = "Sensor", choices = devnames$name, selected = devnames$name[10]),
+1482446088219:checkboxInput("showgrid", label = "Show Grid", value = F)
+1482446088220:),
+1482446088222:column(6,
+1482446088223:h4("Timeline of individual sensor readings"),
+1482446088224:helpText("Click and drag to zoom in (double click to zoom back out)."),
+1482446088225:helpText("Note: not all nodes record frequency data.")
+1482446088226:)
+1482446088227:)
+1482446088228:)
+1482446088229:),
+1482446088230:tabPanel("Flag", icon = icon("external-link"), href="/flag"
+1482446088231:),
+1482446088232:tabPanel("Sensor Matrix",
+1482446088234:verticalLayout(
+1482446088235:column(10,offset = 1,
+1482446088237:plotOutput("distPlot",height = height, dblclick = "plot_dblclick", brush = brushOpts(id = "plot_brush", direction = "x", resetOnNew = T))
+1482446088238:),
+1482446088239:column(10,offset=1,
+1482446088241:h1(),h1(),
+1482446088242:column(6,
+1482446088244:sliderInput("slider_datetime", "Select Time Interval:", min=min,max=max, value = c(min+((max-min)/3),max-((max-min)/3)), width = '100%', timezone = "-0700"),
+1482446088250:radioButtons(input= 'types', label= 'Components',  choices= c("Loudness", "Frequencies"), selected= "Loudness", inline = T)
+1482446088251:),
+1482446088252:column(6,
+1482446088254:h4("Compare sensor timelines next to each other"),
+1482446088255:helpText("Click and drag to zoom in (double click to zoom back out)."))
+1482446088256:)
+1482446088257:)
+1482446088259:),
+1482446088261:tabPanel("Analysis",
+1482446088263:verticalLayout(
+1482446088264:column(10,offset=1,
+1482446088265:column(7,img(src="image/voice-02.jpg", width='100%'), h1()),
+1482446088266:column(4,
+1482446088267:# h4("Noise readings and interpolated noise contour lines"),
+1482446088268:helpText("The noise contour map of the middle frequencies of a Thursday noon clearly shows the difference between more noisy and more quiet regions ")
+1482446088269:),
+1482446088270:column(7,img(src="image/street.svg", width='100%'), h1()),
+1482446088271:column(4,
+1482446088272:# h4("Noise readings and interpolated noise contour lines"),
+1482446088273:helpText("The average sound pressure aggregated over a month by street.
+1482446088275:The most busy streets, Santa Monica and North Virgil, exhibit the highest noise levels, but not the highest variations.")
+1482446088276:),
+1482446088277:column(7,img(src="image/avwdst.svg", width='100%'), h1()),
+1482446088278:column(4,
+1482446088279:# h4("Noise readings and interpolated noise contour lines"),
+1482446088280:helpText("On average, sound levels on weekends are almost as high as during the work week, with a maximum difference of about 5db. This is the case for both active and quiet streets.")
+1482446088282:),
+1482446088283:column(7,img(src="image/hourly.svg", width='100%'), h1()),
+1482446088284:column(4,
+1482446088285:# h4("Noise readings and interpolated noise contour lines"),
+1482446088287:helpText("Aggregated by hour of day, each street shows a distinct profile. In general, the time between 0 and 6am have lowest values, with noise readings picking up around 7am. Peak around 3pm, most pronounced in the bass frequency component.")
+1482446088289:),
+1482446088291:column(7,img(src="image/sensor.svg", width='100%'), h1()),
+1482446088293:column(4,
+1482446088294:# h4("Noise readings and interpolated noise contour lines"),
+1482446088295:helpText("These variations, and especially the “bump” in the base frequencies are even more visible in the temporally averaged profiles for individual sensors; and again especially on those on larger roads. It may be hypothesized that low frequencies are associated especially with trucks and large diesel engines.")
+1482446088297:)
+1482446088298:)
+1482446088300:)
+1482446088302:)
+1482446088303:)
+1484496882373:install.packages(c("digest", "dygraphs", "ggplot2", "git2r", "gstat", "jsonlite", "openssl", "Rcpp", "shiny", "sp"))
+1485211900729:clear

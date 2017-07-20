@@ -1,0 +1,110 @@
+height <- 600
+navbarPage("LA Noise Array", theme = shinytheme("cyborg"), id="atab",
+           tabPanel("About",
+                    includeCSS("www/css/style.css"),
+                    includeHTML("www/insert.html")
+           ),
+           
+           tabPanel("Contour Map",
+                    verticalLayout(
+                      column(10,offset=1,
+                             leafletOutput("leaflet",  height = height)
+                      ),
+                      column(10,offset=1,
+                             h1(),h1(),
+                             column(6, 
+                                    sliderInput("Time", "Time of day", min, max, value = min+3600, width='100%', timezone = "-0700"),
+                                    radioButtons("component", label = "Sound components", choices = comps, selected = comps[5],inline = T)
+                             ),
+                             column(6,
+                                    h4("Noise readings and interpolated noise contour lines"),
+                                    helpText("Numbers represent measured sound pressure values in db."),
+                                    helpText("Contour lines indicate areas of equal noise levels based on a spatial interpolation of the measured values."),
+                                    helpText("Lighter colors indicate more noise.")
+                             )
+                      )
+                    )
+           ),
+           tabPanel("Time View",
+                    tags$head(
+                      tags$style(HTML(".dygraph-legend {background: transparent !important;}"))
+                    ),
+                    verticalLayout(
+                      column(10,offset=1,
+                             dygraphOutput("dygraph1",height = height/2)
+                      ),
+                      column(10,offset=1,
+                             dygraphOutput("dygraph2",height = height/2)
+                      ),
+                      column(10,offset=1,
+                             h1(),h1(),
+                             column(5, offset=1,
+                                    selectizeInput("devid", label = "Sensor", choices = devnames$name, selected = devnames$name[10]),
+                                    checkboxInput("showgrid", label = "Show Grid", value = F)
+                             ),
+                             column(6, 
+                                    h4("Timeline of individual sensor readings"),
+                                    helpText("Click and drag to zoom in (double click to zoom back out)."),
+                                    helpText("Note: not all nodes record frequency data.")
+                             )
+                      )
+                    )
+           ),
+           tabPanel("Sensor Matrix",
+                    verticalLayout(
+                      column(10,offset = 1,
+                             plotOutput("distPlot",height = height, dblclick = "plot_dblclick", brush = brushOpts(id = "plot_brush", direction = "x", resetOnNew = T))
+                      ),
+                      column(10,offset=1,
+                             h1(),h1(),
+                             column(6, 
+                                    sliderInput("slider_datetime", "Select Time Interval:", min=min,max=max, value = c(min+((max-min)/3),max-((max-min)/3)), width = '100%', timezone = "-0700"),
+                                    radioButtons(input= 'types', label= 'Components',  choices= c("Loudness", "Frequencies"), selected= "Loudness", inline = T)
+                             ),
+                             column(6, 
+                                    h4("Compare sensor timelines next to each other"),
+                                    helpText("Click and drag to zoom in (double click to zoom back out)."))
+                      )
+                    )
+                    
+                    
+           ),
+           tabPanel("Street Levels",
+                    verticalLayout(
+                      column(10,offset=1,
+                             htmlOutput("frame")
+                      )
+                    )
+           ),
+           tabPanel("Analysis",
+                    verticalLayout(
+                      column(6,offset=3,
+                             h4("The Geography of Noise"),h1(),
+                             helpText("The urban soundscape is the result of complex interactions between activity and the built environment. It is multifaceted, changes constantly across space and time. The auditory space has a distinct shape and spatial structure. The soundscape is invisible, yet it has a profound impact on how we make sense of our environment."),
+                             helpText("Ambient noise is an almost universally accepted concern for public health. Among the scientific community as well as the general public there is a broad consensus that noise can be both annoying and unhealthy. Epidemiological studies have shown that populations exposed to night-time aircrafts and road traffic noise tend to suffer from elevated blood pressure. Beyond these general effects, parts of the population, including children and the elderly are especially sensitive to environmental noise. Frequency also matters. Many people are more sensitive to low frequencies, which are emitted by ventilation systems, vehicles, and electric machinery. However, low frequencies are generally underestimated in conventional noise measurements, which are the basis of most noise ordnances."), 
+                             helpText("To enable a differentiated understanding of urban auditory phenomena requires a large number of simultaneous measurements, extended over time. Until now, such fine-grained measurements of ambient noise were not available. Point measurements conducted by cities and agencies are too sparse to allow an investigation of how the built environment and human activity influence the soundscape, and which policies, urban design measures are effective in addressing noise pollution. Attempts to address the lack of data through crowd-sourced measurements conducted by citizens using their smartphones are hampered by unsystematic data collection and inaccurate measurements."),
+                             helpText("In this pilot project, we use urban streetlights for measuring the urban soundscape at a fine-grained level, allowing for an in-depth analysis of the urban soundscape and supply evidence for policy measures. "),
+                             h1(),
+                             
+                             # column(7,img(src="image/voice-02.jpg", width='100%'), h1()),
+                             # column(4,
+                             #        # h4("Noise readings and interpolated noise contour lines"),
+                             #        helpText("The noise contour map of the middle frequencies of a Thursday noon clearly shows the difference between more noisy and more quiet regions ")
+                             # ),
+                             img(src="image/street.svg", width='100%'), h1(),
+                             helpText("The average sound pressure aggregated over a month by street. 
+                                             The most busy streets, Santa Monica and North Virgil, exhibit the highest noise levels, but not the highest variations.")
+                             ,
+                             img(src="image/avwdst.svg", width='100%'), h1(),
+                             helpText("On average, sound levels on weekends are almost as high as during the work week, with a maximum difference of about 5db. This is the case for both active and quiet streets.")
+                             ,
+                             img(src="image/hourly.svg", width='100%'), h1(),
+                             helpText("Aggregated by hour of day, each street shows a distinct profile. In general, the time between 0 and 6am have lowest values, with noise readings picking up around 7am. Peak around 3pm, most pronounced in the bass frequency component.")
+                             ,
+                             img(src="image/sensor.svg", width='100%'), h1(),
+                             helpText("These variations, and especially the “bump” in the base frequencies are even more visible in the temporally averaged profiles for individual sensors; and again especially on those on larger roads. It may be hypothesized that low frequencies are associated especially with trucks and large diesel engines.")
+                             )
+                             
+                    )
+)
+)

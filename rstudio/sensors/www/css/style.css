@@ -1,0 +1,32 @@
+/*!
+ * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+.intro {
+  background: url("../image/sensorAreaBW.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: -20px;
+  min-height: 800px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.info  {
+    background: rgba(0,0,0,0.7)
+}
+
+.leaflet-container .leaflet-control-attribution  {
+    background: rgba(0,0,0,0.7)
+}
+
+.dygraph-legend {
+    background: transparent !important;
+}

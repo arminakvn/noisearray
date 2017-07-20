@@ -1,0 +1,30 @@
+.intro {
+    background: url("../image/sensorAreaBW.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -20px;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.info {
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.leaflet-container .leaflet-control-attribution {
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.dygraph-legend {
+    background: transparent !important;
+}

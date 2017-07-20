@@ -1,0 +1,78 @@
+#myCanvas {
+
+}
+
+
+body{
+	background-color:#060606;
+	font-size:14px;
+	font-family:'Raleway',sans-serif;
+	overflow: hidden;
+}
+
+p{
+	color:#ffffff;margin:50px
+}
+a{
+	color:#ffffff
+}
+.axis{
+	fill:black;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none
+}.axis
+
+.halo{
+	stroke:none;
+	stroke-width:0px;
+	stroke-linecap:round
+}.slider
+.handle path{
+	stroke:white;
+	stroke-width:3px;
+	stroke-linecap:round;pointer-events:none
+}.slider
+.handle text{
+	fill:white;
+	text-align:center;
+	font-size:18px
+}
+#range-speed > svg > g.context > g.axis.axis--x > g > text {
+	fill:white;
+	text-align:center;
+	font-size:9px
+}
+
+#range-speed > svg > g.context > g.axis.axis--x > g > line {
+	stroke:white;
+}
+
+
+.d3-slider-handle {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: #eee;
+    background: linear-gradient(to bottom,#ffffff 0%,#ffffff 100%);
+    z-index: 3;
+}
+
+#dynemictext {
+	padding-top: 10px;
+	text-align:center;
+	font-size:18px
+}
+ label{
+	 color: #ffffff;
+ }
+.timeline{
+	stroke: #ffffff;
+	font-size: 20px;
+}
+.main.ui.container {
+  margin-left: 100px;
+}
+

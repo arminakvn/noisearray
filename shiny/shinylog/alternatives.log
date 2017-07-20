@@ -1,0 +1,14 @@
+update-alternatives 2016-12-15 21:20:45: run with --install /usr/bin/editor editor /bin/nano 40 --slave /usr/share/man/man1/editor.1.gz editor.1.gz /usr/share/man/man1/nano.1.gz
+update-alternatives 2016-12-15 21:20:45: link group editor updated to point to /bin/nano
+update-alternatives 2016-12-15 21:20:45: run with --install /usr/bin/pico pico /bin/nano 10 --slave /usr/share/man/man1/pico.1.gz pico.1.gz /usr/share/man/man1/nano.1.gz
+update-alternatives 2016-12-15 21:20:45: link group pico updated to point to /bin/nano
+update-alternatives 2016-12-15 21:30:24: run with --install /usr/lib/x86_64-linux-gnu/libtxc_dxtn.so libtxc-dxtn-x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/s2tc/libtxc_dxtn.so 10
+update-alternatives 2016-12-15 21:30:24: link group libtxc-dxtn-x86_64-linux-gnu updated to point to /usr/lib/x86_64-linux-gnu/s2tc/libtxc_dxtn.so
+update-alternatives 2016-12-15 21:33:37: run with --install /usr/bin/write write /usr/bin/bsd-write 100 --slave /usr/share/man/man1/write.1.gz write.1.gz /usr/share/man/man1/bsd-write.1.gz
+update-alternatives 2016-12-15 21:33:37: link group write updated to point to /usr/bin/bsd-write
+update-alternatives 2016-12-15 21:33:37: run with --install /usr/bin/from from /usr/bin/bsd-from 10 --slave /usr/share/man/man1/from.1.gz from.1.gz /usr/share/man/man1/bsd-from.1.gz
+update-alternatives 2016-12-15 21:33:37: link group from updated to point to /usr/bin/bsd-from
+update-alternatives 2016-12-15 21:35:54: run with --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Adwaita/cursor.theme 90
+update-alternatives 2016-12-15 21:35:54: link group x-cursor-theme updated to point to /usr/share/icons/Adwaita/cursor.theme
+update-alternatives 2016-12-15 21:36:19: run with --install /usr/bin/gnome-text-editor gnome-text-editor /usr/bin/gedit 50 --slave /usr/share/man/man1/gnome-text-editor.1.gz gnome-text-editor.1.gz /usr/share/man/man1/gedit.1.gz
+update-alternatives 2016-12-15 21:36:19: link group gnome-text-editor updated to point to /usr/bin/gedit

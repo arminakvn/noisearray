@@ -1,0 +1,25 @@
+{
+  "name": "webpaper",
+  "description": "philips data paperjs animation app",
+  "main": "app.js",
+  "authors": [
+    "arminakvn"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.3.0",
+    "jquery": "^3.1.1",
+    "paper": "^0.10.2",
+    "three.js": "three#*",
+    "semantic": "semantic-ui#^2.2.6",
+    "semantic-ui-calendar": "^0.0.4"
+  }
+}

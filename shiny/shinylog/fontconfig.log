@@ -1,0 +1,17 @@
+/usr/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
+/usr/share/fonts/truetype: skipping, existing cache is valid: 0 fonts, 1 dirs
+/usr/share/fonts/truetype/dejavu: skipping, existing cache is valid: 22 fonts, 0 dirs
+/usr/X11R6/lib/X11/fonts: skipping, no such directory
+/usr/local/share/fonts: skipping, existing cache is valid: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/usr/share/texmf/fonts/opentype/public/tex-gyre: skipping, existing cache is valid: 33 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre-math: skipping, existing cache is valid: 5 fonts, 0 dirs
+/usr/share/fonts: caching, new cache contents: 0 fonts, 1 dirs
+/usr/X11R6/lib/X11/fonts: skipping, no such directory
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/usr/share/texmf/fonts/opentype/public/tex-gyre: caching, new cache contents: 33 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre-math: caching, new cache contents: 5 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/.cache/fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded
